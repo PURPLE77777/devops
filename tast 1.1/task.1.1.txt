@@ -1,0 +1,68 @@
+2:
+pwd
+ls
+
+3:
+cd Downloads
+cd ..
+
+4:
+cd /
+ls -la
+
+5:
+cd /home/user
+touch dog.txt
+echo "Star Wars" > dog.txt
+
+6:
+vim dog.txt
+i
+Enter
+Anakin Skywalker
+Enter
+Obi-Wan Kenobi
+Enter
+Yoda
+Enter
+Sheev Palpatine
+Esc
+:wq
+
+7:
+cat dog.txt
+
+8:
+mv dog.txt cat.txt
+mkdir animals
+mv cat.txt animals
+
+9:
+cd animals
+cat ./cat.txt
+cd /
+cat /home/user/animals/cat.txt
+cat ./home/user/animals/cat.txt
+
+10:
+cd /home/user/animals
+touch mouse.txt lion.txt
+echo "Tom and Jerry" >> mouse.txt
+
+12:
+ls | grep "cat.txt"
+ls | grep "cat"
+ls | grep "^cat.txt$"
+find . -name "cat.txt"
+
+13:
+rm lion.txt
+cd ..
+rm -r animals
+
+14:
+history
+history | grep mkdir
+
+15:
+history > commands.txt
